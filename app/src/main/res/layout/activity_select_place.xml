@@ -1,0 +1,151 @@
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/loginCordinatorLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Activities.SelectPlaceActivity">
+
+    <!-- searching progress -->
+    <ProgressBar
+        android:id="@+id/searching_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"/>
+
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context="si.uff.qualvai.Activities.SelectPlaceActivity"
+            tools:showIn="@layout/activity_select_place">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_place_text"
+                android:id="@+id/selectPlaceTextView"
+                android:textSize="@dimen/abc_text_size_display_1_material"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_store_grey600_48dp"
+                android:id="@+id/placeTypeIcon"
+                android:layout_alignBottom="@+id/placeDropdownSpinner"
+                android:layout_alignTop="@+id/placeDropdownSpinner"
+                android:layout_below="@+id/selectPlaceTextView"
+                android:layout_alignParentStart="true"/>
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/placeDropdownSpinner"
+                android:layout_below="@+id/selectPlaceTextView"
+                android:layout_marginTop="16dp"
+                android:spinnerMode="dropdown"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toEndOf="@+id/placeTypeIcon"
+                android:minHeight="@android:dimen/app_icon_size"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_food_variant_grey600_48dp"
+                android:id="@+id/foodVariantTypeIcon"
+                android:layout_alignBottom="@+id/foodVariantDropdownSpinner"
+                android:layout_alignTop="@+id/foodVariantDropdownSpinner"
+                android:layout_alignParentStart="true"/>
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/foodVariantDropdownSpinner"
+                android:layout_toEndOf="@+id/foodVariantTypeIcon"
+                android:layout_below="@+id/placeDropdownSpinner"
+                android:layout_marginBottom="8dp"
+
+                android:minHeight="@android:dimen/app_icon_size"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_ac_unit_black_48dp"
+                android:alpha="0.54"
+                android:id="@+id/outdoorTypeIcon"
+                android:layout_alignBottom="@+id/outdoorDropdownSpinner"
+                android:layout_alignTop="@+id/outdoorDropdownSpinner"
+                android:layout_alignParentStart="true"/>
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/outdoorDropdownSpinner"
+                android:layout_toEndOf="@+id/outdoorTypeIcon"
+                android:layout_below="@+id/foodVariantDropdownSpinner"
+                android:layout_marginBottom="8dp"
+                android:minHeight="@android:dimen/app_icon_size"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_place_black_48dp"
+                android:alpha="0.54"
+                android:id="@+id/locationIcon"
+                android:layout_alignBottom="@+id/locationSpinner"
+                android:layout_alignTop="@+id/locationSpinner"
+                android:layout_alignParentStart="true"/>
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/locationSpinner"
+                android:layout_toEndOf="@+id/locationIcon"
+                android:layout_below="@+id/outdoorDropdownSpinner"
+                android:layout_marginBottom="8dp"
+                android:minHeight="@android:dimen/app_icon_size"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="?android:textAppearanceSmall"
+                android:textStyle="bold"
+                android:id="@+id/searchButton"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:text="@string/search_button_text"/>
+
+
+
+
+        </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

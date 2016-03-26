@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="si.uff.qualvai.Activities.GoingActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restaurante Tanaka"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/placeNameTextView"
+        android:textSize="@dimen/abc_text_size_display_1_material"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/abc_action_bar_icon_vertical_padding_material"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18:00 Pólo aquático EUA x Áustria"
+        android:id="@+id/gameTextView"
+        android:textSize="@dimen/abc_text_size_menu_material"
+        android:layout_below="@+id/placeNameTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="... pessoas clicaram Eu Vou!"
+        android:id="@+id/peopleCountTextView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:id="@+id/homeButton"
+        android:layout_above="@+id/peopleCountTextView"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_margin="18dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eu Vou!"
+        android:id="@+id/goButton"
+        android:layout_alignBottom="@+id/homeButton"
+        android:layout_toStartOf="@+id/homeButton"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Outro Local"
+        android:id="@+id/anotherPlaceButton"
+        android:layout_alignBottom="@+id/homeButton"
+        android:layout_toEndOf="@+id/homeButton"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_alignParentEnd="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/placePhotoImageView"
+        android:src="@drawable/amineira1"
+        android:layout_below="@+id/gameTextView"
+        android:layout_above="@+id/homeButton"
+        android:layout_toEndOf="@+id/imageButtonLeft"
+        android:layout_toStartOf="@+id/imageButtonRight"
+
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonLeft"
+        android:src="@drawable/ic_keyboard_arrow_left_white_24dp"
+        android:background="@color/colorPrimaryDark"
+
+
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonRight"
+        android:src="@drawable/ic_keyboard_arrow_right_white_24dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignTop="@+id/imageButtonLeft"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

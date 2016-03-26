@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">Qual Vai?</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in_short">Login</string>
+    <string name="action_register">Cadastre-se com um email</string>
+    <string name="action_register_now">Cadastre-se</string>
+    <string name="error_invalid_email">Endereço de email inválido</string>
+    <string name="error_invalid_password">Senha deve conter mais do que 7 caracteres</string>
+    <string name="error_incorrect_password">Senha incorreta</string>
+    <string name="error_field_required">Esse campo deve ser preenchido</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_register">Registre-se</string>
+
+
+    <string name="share_pref_file">roarPref</string>
+    <string name="is_new_user">isNewUser</string>
+    <string name="is_profile_info_complete">isProfileComplete</string>
+
+    <string name="error_email_taken">Email já cadastrado</string>
+    <string name="error_user_does_not_exist">Email não cadastrado</string>
+
+    <string name="error_network_access">Rede está desconectada</string>
+    <string name="title_activity_teste">TesteActivity</string>
+    <string name="logout">Log out</string>
+    <string name="notAvailableGames">Por enquanto, não há jogos disponíveis para essa data.</string>
+    <string name="availableGames">Selecione um dos jogos disponíveis:</string>
+
+
+    <string-array name="dia_5_array">5 de Agosto de 2016
+        <item>20:00 Abertura dos Jogos Olímpicos Rio 2016</item>
+    </string-array>
+
+
+    <string-array name="dia_6_array">
+        <item>9:00 Arco e Flecha Feminino - Primeira Fase</item>
+        <item>10:00 Basquete Masculino- Brasil x Espanha </item>
+    </string-array>
+
+    <string-array name="dia_7_array">
+        <item>9:30 Vôlei de Praia Masculino - EUA x Cuba</item>
+        <item>15:00 Ginástica Artística Feminino - Finais </item>
+    </string-array>
+
+    <string-array name="dia_8_array">
+        <item>8:00 Basquete Masculino - Brasil x Angola</item>
+        <item>15:00 Ginástica Artística Masculino - Finais </item>
+    </string-array>
+
+    <string-array name="dia_9_array">
+        <item>8:00 Ciclismo Feminino - Quartas de Final</item>
+        <item>15:00 Golfe Masculino - Primeira fase </item>
+    </string-array>
+
+    <string-array name="dates_array">
+        <item> 5 de Agosto de 2016 </item>
+        <item>6 de Agosto de 2016</item>
+        <item>7 de Agosto de 2016</item>
+        <item>8 de Agosto de 2016</item>
+        <item>9 de Agosto de 2016</item>
+        <item>10 de Agosto de 2016</item>
+        <item>11 de Agosto de 2016</item>
+        <item>12 de Agosto de 2016</item>
+        <item>13 de Agosto de 2016</item>
+        <item>14 de Agosto de 2016</item>
+        <item>15 de Agosto de 2016</item>
+        <item>16 de Agosto de 2016</item>
+        <item>17 de Agosto de 2016</item>
+        <item>18 de Agosto de 2016</item>
+        <item>19 de Agosto de 2016</item>
+        <item>20 de Agosto de 2016</item>
+        <item>21 de Agosto de 2016</item>
+    </string-array>
+
+    <string-array name="dates_references_array">
+        <item>@array/dia_5_array</item>
+        <item>@array/dia_6_array</item>
+        <item>@array/dia_7_array</item>
+        <item>@array/dia_8_array</item>
+        <item>@array/dia_9_array</item>
+        <item>10 de Agosto de 2016</item>
+        <item>11 de Agosto de 2016</item>
+        <item>12 de Agosto de 2016</item>
+        <item>13 de Agosto de 2016</item>
+        <item>14 de Agosto de 2016</item>
+        <item>15 de Agosto de 2016</item>
+        <item>16 de Agosto de 2016</item>
+        <item>17 de Agosto de 2016</item>
+        <item>18 de Agosto de 2016</item>
+        <item>19 de Agosto de 2016</item>
+        <item>20 de Agosto de 2016</item>
+        <item>21 de Agosto de 2016</item>
+    </string-array>
+
+    <string-array name="places_array">
+        <item>Bares</item>
+        <item>Restaurantes</item>
+        <item>Pubs</item>
+        <item>Chopperias</item>
+    </string-array>
+
+    <string-array name="food_variant_array">
+        <item>Petiscos</item>
+        <item>Americana</item>
+        <item>Japonesa</item>
+        <item>Brasileira</item>
+        <item>Italiana</item>
+    </string-array>
+
+    <string-array name="outdoor_array">
+        <item>Área aberta</item>
+        <item>Área fechada</item>
+    </string-array>
+
+    <string-array name="bairro_array">
+        <item>Gragoatá</item>
+        <item>Maracanã</item>
+        <item>Grajaú</item>
+
+    </string-array>
+
+
+    <string name="title_activity_select_place">SelectPlaceActivity</string>
+    <string name="select_place_text">O que você procura?</string>
+    <string name="search_button_text">Procurar</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_app_id">AIzaSyCh3nVYe_HYCuLSfmC0nwKVnhNfONbuknA</string>
+    <string name="title_activity_go">GoActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+</resources>

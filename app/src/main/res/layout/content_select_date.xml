@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.SelectDateActivity"
+    tools:showIn="@layout/activity_select_date"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bem vindo, usuário!"
+        android:id="@+id/welcomeUserTextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:id="@+id/logoutButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolha uma data:"
+        android:id="@+id/chooseDateTextView"
+        android:layout_below="@+id/welcomeUserTextView"
+        android:layout_alignStart="@+id/welcomeUserTextView"
+        android:textSize="@dimen/abc_text_size_display_1_material"
+        android:layout_marginTop="8dp"/>
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePickerSpinner"
+        android:layout_below="@+id/chooseDateTextView"
+        android:layout_marginTop="16dp"
+        android:spinnerMode="dropdown"
+        android:layout_marginLeft="16dp"
+        android:layout_toEndOf="@+id/calendarIconImageView"
+        android:minHeight="@android:dimen/app_icon_size"
+
+        />
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_calendar_grey600_48dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/calendarIconImageView"
+        android:layout_alignBottom="@+id/datePickerSpinner"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/datePickerSpinner"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/availableGames"
+        android:id="@+id/availableGamesTextView"
+        android:textSize="28sp"
+        android:layout_below="@+id/datePickerSpinner"
+        android:layout_alignParentStart="true"
+        android:visibility="visible"/>
+
+    <GridLayout
+        android:id="@+id/availableGamesGridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/availableGamesTextView"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/logoutButton"
+        >
+
+    </GridLayout>
+
+
+</RelativeLayout>
